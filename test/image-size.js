@@ -13,7 +13,7 @@ test('image size test', function (t) {
 
   t.equal(
     md.render(`![](dummy-200x200.png "image title")`),
-    '<p><img src="dummy-200x200.png" alt="" title="image title" loading="lazy" width="200" height="200"></p>\n'
+    '<p><img src="dummy-200x200.png" alt="" title="image title" loading="lazy" width="200" height="200" class="lz-img"></p>\n'
   );
 
 });
@@ -30,7 +30,7 @@ test('image size test custom image path function', function (t) {
 
   t.equal(
     md.render(`![](https://example.com/dummy-200x200.png "image title")`),
-    '<p><img src="https://example.com/dummy-200x200.png" alt="" title="image title" loading="lazy" width="200" height="200"></p>\n'
+    '<p><img src="https://example.com/dummy-200x200.png" alt="" title="image title" loading="lazy" width="200" height="200" class="lz-img"></p>\n'
   );
 
 });

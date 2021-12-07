@@ -27,6 +27,8 @@ module.exports = function lazy_loading_plugin(md, mdOptions) {
 
         token.attrSet('width', dimensions.width);
         token.attrSet('height', dimensions.height);
+
+        token.attrJoin('class', 'lz-img')
       }
     } catch (err) {
       console.error(err.toString())
